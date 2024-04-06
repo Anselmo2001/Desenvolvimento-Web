@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendas por País</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Vendas por País</h2>
+
+  <form action="index.php" method="get">
+    <label for="pais">País:</label>
+    <select name="pais" id="pais">
+      <option value="">Todos</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Estados Unidos">Estados Unidos</option>
+      <option value="Portugal">Portugal</option>
+    </select>
+    <input type="submit" value="Filtrar">
+  </form>
+
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>País</th>
+        <th>Total de Vendas</th>
+      </tr>
+    </thead>
+    <tbody>
+      </tbody>
+  </table>
+</body>
+</html>
